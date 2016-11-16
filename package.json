@@ -1,6 +1,6 @@
 {
-  "name": "boilerplate",
-  "version": "3.0.0",
+  "name": "React Todo App",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
