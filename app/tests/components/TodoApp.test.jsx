@@ -17,17 +17,45 @@ describe('TodoApp', () => {
     todoApp.handleAddTodo(todoText);
     expect(todoApp.state.todos[0].text).toBe(todoText);
 
+    /*expect createdAt to be a number
+    *
+    *
+    * CODE HERE
+    *
+    *
+    */
+
   });
   it('should toggle completed Value when handleToggle called',  ()=> {
     var todoData = {
       id:11,
       text:'Test Feather',
-      completed:false
+      completed:false,
+      cretedAt:0,
+      completedAt:undefined
     };
     var todoApp = TestUtils.renderIntoDocument(<TodoApp/>);
     todoApp.setState({todos:[todoData]});
     expect(todoApp.state.todos[0].completed).toBe(false);
     todoApp.handleToggle(todoApp.state.todos[0].id);
-    expect(todoApp.state.todos[0].completed).toBe(true)
+    expect(todoApp.state.todos[0].completed).toBe(true);
+
+    /*expect completedAt to be a number
+    *
+    *
+    * CODE HERE
+    *
+    *
+    */
+
   });
+
+  /*Test that when toggle from TRUE to FALSE, completedAt get removed
+  *
+  *
+  * CODE HERE
+  *
+  *
+  */
+
 });
