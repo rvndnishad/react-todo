@@ -1,4 +1,4 @@
-.todo    {
+.todo {
   align-items: center;
   cursor: pointer;
   display: flex;
@@ -17,13 +17,12 @@
     }
 }
 
-.todo__subtext{
-  color:#999;
-}
-
-.todo_completed  {
-  p, .todo-subtext  {
-    color:#aaa;
+.todo-completed{
+  p, .todo__subtext {
     text-decoration: line-through;
   }
+}
+
+.todo__subtext{
+  color:#999999;
 }
